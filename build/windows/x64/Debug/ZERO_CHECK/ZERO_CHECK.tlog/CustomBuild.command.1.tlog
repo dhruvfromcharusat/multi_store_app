@@ -1,0 +1,10 @@
+^E:\INTERSHIP\NEW FOLDER\MULTI_STORE_APP\BUILD\WINDOWS\CMAKEFILES\C04EDAA4784951EC9865A1FA15656B95\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SE:/intership/New folder/multi_store_app/windows" "-BE:/intership/New folder/multi_store_app/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "E:/intership/New folder/multi_store_app/build/windows/multi_store_app.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
